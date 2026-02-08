@@ -2,16 +2,20 @@
 .login-bg {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  
+  background: linear-gradient(
+      rgba(10, 10, 25, 0.85),
+      rgba(10, 10, 25, 0.85)
+    ),
+    url("../public/bg.jpg");
 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
 }
+
+
 
 
 
@@ -138,3 +142,45 @@
   color: #9f7aea;
   text-decoration: underline;
 }
+
+.switch-text {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #c7d2fe;
+  cursor: pointer;
+}
+
+.switch-text:hover {
+  text-decoration: underline;
+}
+
+/* Heading text (Create Account / Welcome Back) */
+.welcome-text {
+  color: #dadde8;        /* soft light violet */
+  font-weight: 600;
+}
+
+/* Switch text container */
+.register-text {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Muted part: "Already have an account?" */
+.register-muted {
+  color: #e0e7f1;        /* muted gray */
+}
+
+/* Highlighted clickable part: Login / Register */
+.register-link {
+  color: #6366f1;        /* indigo (primary accent) */
+  font-weight: 600;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+

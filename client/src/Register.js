@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./Login.css"; // reuse same glassmorphism styles
+import "./Login.css";
 
-function Register({ onRegister }) {
+function Register({ onSwitch }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -21,58 +21,70 @@ function Register({ onRegister }) {
     const data = await res.json();
 
     if (res.ok) {
-      alert("Registration successful. Please login.");
-      onRegister(); // switch to login
+      alert("Account created successfully! Please login.");
+      onSwitch();
     } else {
       alert(data.message || "Registration failed");
     }
   };
 
   return (
-    <div className="login-bg">
-      <div className="login-card">
-        <h2>Create Account</h2>
+    <div
+      className="login-bg"
+      style={{
+        backgroundImage:
+          "linear-gradient(rgba(10,12,20,0.85), rgba(10,12,20,0.85)), url(/bg.jpg)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
+      <div className="login-wrapper">
+        {/* WEBSITE NAME */}
+        <div className="site-branding">
+          <h1>CodeTrack</h1>
+          <p>Track your coding journey</p>
+        </div>
 
-        <input
-          type="text"
-          placeholder="Full Name"
-          value={name}
-          onChange={e => setName(e.target.value)}
-        />
+        <div className="login-card">
+          <img src="/logoo.png" alt="Website Logo" className="login-logo" />
 
-        <input
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-        />
+          <h2 className="welcome-text">Create Account</h2>
 
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={e => setPassword(e.target.value)}
-        />
+          <input
+            type="text"
+            placeholder="Full Name"
+            value={name}
+            onChange={e => setName(e.target.value)}
+          />
 
-        <button className="login-btn" onClick={handleRegister}>
-          Register
-        </button>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+          />
 
-        <p
-          style={{
-            marginTop: "16px",
-            textAlign: "center",
-            fontSize: "14px",
-            opacity: 0.8,
-            cursor: "pointer"
-          }}
-          onClick={onRegister}
-        >
-          Already have an account? Login
-        </p>
+          <input
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+          />
+
+          <button className="login-btn" onClick={handleRegister}>
+            Register
+          </button>
+
+          <p className="register-text" onClick={onSwitch}>
+            <span className="register-muted">Already have an account?</span>{" "}
+            <span className="register-link">Login</span>
+          </p>
+        </div>
       </div>
     </div>
   );
 }
 
 export default Register;
+
