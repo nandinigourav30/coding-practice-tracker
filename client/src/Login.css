@@ -1,0 +1,140 @@
+/* Background */
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+/* Glass Card */
+.login-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border-radius: 22px;
+  padding: 40px;
+  width: 360px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(237, 231, 231, 0.12);
+  color: white;
+  font-size: 14px;
+}
+
+.login-card input::placeholder {
+  color: #cfcfcf;
+}
+
+.login-card input:focus {
+  outline: 2px solid #6c63ff;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #7c7cff, #5f5fff);
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 124, 255, 0.4);
+}
+
+.login-logo {
+  width: 90px;
+  margin: 0 auto 20px;
+  display: block;
+  filter: drop-shadow(0 8px 20px rgba(211, 211, 230, 0.4));
+}
+
+/* Website name above login box */
+.site-branding {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.site-branding h1 {
+  font-size: 42px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #7c7cff, #9f7aea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.site-branding p {
+  font-size: 14px;
+  opacity: 0.75;
+  color: #f4eeee;
+}
+
+.welcome-text {
+  color: #ffffff;
+}
+
+.register-text span {
+  color: #9f7aea;
+  transition: 0.2s;
+}
+
+.register-text span:hover {
+  color: #b794f4;
+}
+/* Full register line */
+.register-text {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* "Don't have an account?" */
+.register-muted {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* "Register" */
+.register-link {
+  color: #7c7cff;
+  font-weight: 600;
+  margin-left: 4px;
+  transition: 0.2s ease;
+}
+
+.register-link:hover {
+  color: #9f7aea;
+  text-decoration: underline;
+}
