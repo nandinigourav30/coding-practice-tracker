@@ -35,6 +35,22 @@ Background visuals related to coding & algorithms
 Responsive layout
 
 
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login Page](Screenshots/Login.png)
+
+### 📝 Register Page
+![Register Page](Screenshots/Register.png)
+
+### 📊 Dashboard
+![Dashboard](Screenshots/Dashboard.png)
+
+### 📚 Dropdown
+![Dropdown](Screenshots/Dropdown.png)
+
+
+
 
 🛠 Tech Stack
 
