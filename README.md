@@ -17,17 +17,27 @@ Full CRUD functionality
 🛠 Tech Stack
 
 Frontend: React.js, JavaScript, HTML, CSS
+
 Backend: Node.js, Express.js
+
 Database: MySQL
+
 Tools: Git, GitHub
 
 ▶️ Run Locally
+
 # Backend
+
 cd server
+
 npm install
+
 node index.js
 
 # Frontend
+
 cd client
+
 npm install
+
 npm start
